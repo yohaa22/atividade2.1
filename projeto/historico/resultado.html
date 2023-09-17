@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado</title>
+</head>
+<body>
+
+
+    <header>
+
+        <nav>
+            <ul>
+            <li><a href="/projeto/index.html"> home</a></li>
+            <li><a href="/projeto/historico/historico.html"> historico</a></li>
+         
+            </nav>
+        
+        </header>
+    <h1>Resultado do Formulário</h1>
+
+    <p>Nome: <span id="resultadoNome"></span></p>
+    <p>data de nascimento: <span id="resultadodata"></span></p>
+    <p>CPF: <span id="resultadocpf"></span></p>
+
+
+
+    <p>endereço: <span id="resultadoRua"></span></p>
+    <p>numero: <span id="resultadonumero"></span></p>
+    <p>CEP: <span id="resultadoCEP"></span></p>
+    <p>cidade: <span id="resultadocidade"></span></p>
+
+    <p>E-mail: <span id="resultadoEmail"></span></p>
+    
+    <p>senha: <span id="resultadosenha"></span></p>
+    
+    <script>
+
+        
+        const urlParams = new URLSearchParams(window.location.search);
+        const nome = urlParams.get('nome');
+
+        const cpf = urlParams.get('cpf');
+         const data = urlParams.get('data');
+         const rua = urlParams.get('rua');
+        const numero= urlParams.get('numero');
+        const CEP= urlParams.get('CEP')
+        const cidade= urlParams.get('cidade')
+
+
+        const email = urlParams.get('email');
+        const senha = urlParams.get('senha');
+
+
+
+        // Exibir os valores na página
+        document.getElementById('resultadoNome').textContent = nome;
+
+        document.getElementById('resultadodata').textContent = data;
+
+        document.getElementById('resultadocpf').textContent = cpf;
+
+
+
+
+       
+        document.getElementById('resultadoRua').textContent = rua;
+        document.getElementById('resultadonumero').textContent = numero;
+        document.getElementById('resultadoCEP').textContent = CEP;
+        document.getElementById('resultadocidade').textContent = cidade;
+        document.getElementById('resultadoEmail').textContent = email;
+        document.getElementById('resultadosenha').textContent = senha;
+ 
+
+
+    </script>
+
+
+
+<footer>
+
+    <h3> obrigado por comprar conosco </h3>
+
+</footer>
+
+
+</body>
+</html>
+
+
+
+
+    
